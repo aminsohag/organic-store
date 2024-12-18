@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a8144c5d0d.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      primary: 'rgb(139, 195, 74)',
+                      secondary: 'rgb(17, 17, 17)',
+                      body: 'rgb(248, 246, 243)',
+                      accent: 'rgb(106, 151, 57)',
+                      body_neutral: 'rgb(51, 51, 51)',
+                  },
+                  fontFamily: {
+                      Poppins: 'Poppins',
+                  },
+                  backgroundImage: {
+                      leaf1: "url('./images/leaf01.png')",
+                      call_to_action: "url('./images/call.jpg')",
+                      testimonials: "url('./images/testimonials.jpg')",
+                  },
+              },
+          },
+      }
+  </script>
+  <style>
+    
+.font-poppins {
+  font-family: "Poppins", serif;
+}
+  </style>
+</head>
+<body class="font-poppins">
+    <header>
+      <!-- navbar part -->
+        <nav class="container mx-auto">
+            <div class="navbar p-0 py-2">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-xl">
+                    <img class="w-36" src="images/logo.svg" alt="">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                    <li class="hover:text-primary transition-colors duration-300 case-in-out"><a>Home</a></li>
+                    <li class="hover:text-primary transition-colors duration-300 case-in-out"><a>Everything</a></li>
+                    <li class="hover:text-primary transition-colors duration-300 case-in-out"><a>Groceries</a></li>
+                    <li class="hover:text-primary transition-colors duration-300 case-in-out"><a>About </a></li>
+                    <li class="hover:text-primary transition-colors duration-300 case-in-out"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div>
+                    <div class="flex items-center gap-3 text-lg font-semibold">
+                      <button>$20.00</button>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5">
+                    <li><a>Home</a></li>
+                    <li><a>Everything</a></li>
+                    <li><a>Groceries</a></li>
+                    <li><a>About </a></li>
+                    <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!-- banner part -->
+        <section class=" bg-leaf1 bg-no-repeat bg-right-bottom">
+          <div class="w-full h-full bg-body bg-opacity-90">
+            <div class="lg:w-9/12 mx-auto py-24 lg:flex items-center justify-between">
+              <div class="flex-1">
+                <img class="w-full h-full" src="images/bannerbg.png" alt="">
+              </div>
+              <div class="flex-1 sm:text-left text-center">
+                <h3 class="text-2xl font-bold my-6">Best Quality Products</h3>
+                <h1 class="text-4xl lg:text-6xl font-bold">Join The Organic Movement!</h1>
+                <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.shop Now</p>
+                <div class="flex sm:justify-start justify-center pb-10">
+                  <button class="flex btn bg-accent items-center px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Shop Now</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </header>
+    <main>
+      <!-- first section -->
+      <section class="bg-black text-white">
+        <div class="container mx-auto">
+          <div class="p-24 ">
+            <!--  -->
+            <!-- card 1 -->
+             <div class=" flex gap-6 items-center bg-body_neutral p-8 ">
+              <div>
+                <i class="fa-solid fa-truck text-4xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">free shipping</h3>
+                <p class="text-lg">Above $5 Only</p>
+              </div>
+             </div>
+             <!-- card 2 -->
+             <!-- <div class="flex gap-6 items-center bg-body_neutral py-12 px-8 ">
+              <div>
+                <i class="fa-solid fa-truck text-5xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">free shipping</h3>
+                <p class="text-lg">Above $5 Only</p>
+              </div>
+             </div> -->
+             <!-- card 3 -->
+             <!-- <div class="flex gap-6 items-center bg-body_neutral p-8 ">
+              <div>
+                <i class="fa-solid fa-truck text-5xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">free shipping</h3>
+                <p class="text-lg">Above $5 Only</p>
+              </div>
+             </div> -->
+             <!-- card 4 -->
+             <!-- <div class="flex gap-6 items-center bg-body_neutral p-8 ">
+              <div>
+                <i class="fa-solid fa-truck text-5xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">free shipping</h3>
+                <p class="text-lg">Above $5 Only</p>
+              </div>
+             </div> -->
+          </div>
+  
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
